@@ -1,0 +1,65 @@
+<%- include('partials/header.ejs') %>
+
+
+
+  <body>
+    <header class="flex">
+        <img src="/Img/WCE24.png" alt="WCE">
+        <nav>
+          <ul class="flexi">
+            <li><a href="/">Home</a></li>
+              <li><a href="#aboutus">aboutus</a></li>
+              <li><a href="#contactus">contact us</a></li>
+              <li><a href="/gym">GYM</a></li>
+              <li><a href="/sports">Sports</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="view">
+      <form style="text-align: center">
+        
+        <label for="cars">Select Year </label>
+        <select id="ddlYears"></select><br>
+        <label for="cars">Select Month </label>
+        <select placeholder="select Month">
+            <option name="" value="" style="display:none;">Select Month</option>
+            <option name="January" value="Jan">January</option>
+            <option name="February" value="Feb">February</option>
+            <option name="March" value="Mar">March</option>
+            <option name="April" value="Apr">April</option>
+            <option name="January" value="Jan">May</option>
+            <option name="February" value="Feb">June</option>
+            <option name="March" value="Mar">July</option>
+            <option name="April" value="Apr">August</option>
+            <option name="January" value="Jan">September</option>
+            <option name="February" value="Feb">October</option>
+            <option name="March" value="Mar">November</option>
+            <option name="April" value="Apr">December</option>
+    
+        </select><br>
+        <a href="http://www.walchandsangli.ac.in/gym/Gymkhana%20Website%20Information%20Version%201%2014.09.2022%20one%20page.pdf" class="button button1">View</a>
+        <!-- <a href="http://www.walchandsangli.ac.in/gym/Gymkhana%20Website%20Information%20Version%201%2014.09.2022%20one%20page.pdf"><button class="button button1" type="submit"> View </button></a>    -->
+      </form>
+      <script type="text/javascript">
+        window.onload = function () {
+            //Reference the DropDownList.
+            var ddlYears = document.getElementById("ddlYears");
+     
+            //Determine the Current Year.
+            var currentYear = (new Date()).getFullYear();
+     
+            //Loop and add the Year values to DropDownList.
+            for (var i = 2015; i <= currentYear; i++) {
+                var option = document.createElement("OPTION");
+                option.innerHTML = i;
+                option.value = i;
+                ddlYears.appendChild(option);
+            }
+        };
+    </script>
+    
+    </div>
+    
+    </body>
+    </html>
+    

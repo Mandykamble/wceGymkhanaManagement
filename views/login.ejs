@@ -1,0 +1,49 @@
+<%- include('partials/header.ejs') %>
+  <body>
+    <header class="flex">
+      <img src="/Img/WCE24.png" alt="WCE">
+      <nav>
+        <ul class="flexi">
+          <li><a href="/">Home</a></li>
+            <li><a href="#aboutus">aboutus</a></li>
+            <li><a href="#contactus">contact us</a></li>
+            <li><a href="/gym">GYM</a></li>
+            <li><a href="/sports">Sports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container1">
+      <div class="cred">
+        
+        <div class="side">
+          <h1 style="border: 3px solid rgb(255, 255, 255); padding: 10px; ">Login</h1>
+        </div>
+        <form action="/login" method="post">
+          <label for="search__input"> <h1>Email</h1> </label>
+          <input class="search__input" type="text" placeholder="username" name="email" />
+          <label for="search__input"> <h1>password</h1> </label>
+          <input class="search__input" type="password" placeholder="password" name="password" />
+          <div class="buttons">
+            <button class="btn" id="btn1"><a href="/register"></a>Login</button>
+          
+        </form>
+      </div>
+    </div>
+
+    
+
+    <!-- <footer>
+      ©2022 Gymkhana. All Rights Reserved
+      <br />
+      <p style="font-size: 10px; margin-top: 55px; ">
+        We use cookies to offer better online experiences. By visiting and using
+        Price History, you consent to our use of cookies. Learn about your
+        options, rights and more by reading our Terms & Conditions and Privacy
+        Policy.
+      </p>
+      
+    </footer> -->
+  </body>
+  <script src="/app.js"></script>
+</html>
